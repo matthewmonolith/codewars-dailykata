@@ -20,8 +20,9 @@ function duplicateEncode(word){
 
   
 
-// This function takes a string as input, converts it to lowercase, and then creates an array of individual characters from the string using the `split` method. It then applies the `map` method to each character in the array, which checks if the index of the first occurrence of the character in the array is the same as the index of the last occurrence of the character in the array.
+// then applies the `map` method to each character in the array, which checks if the index of the first occurrence of the character in the array is the same as the index of the last occurrence of the character in the array.
 
-// If the character occurs only once in the array, it returns a `(`, otherwise it returns `)` for characters that occur more than once. Finally, it uses the `join` method to convert the array of characters back into a string.
+// If the character occurs only once in the array, it returns a `(`, otherwise it returns `)` for characters that occur more than once. 
 
 // In other words, this function is encoding the string by replacing each character with a `(` if it appears only once, and with a `)` if it appears more than once. This encoding scheme is called "duplicate encoding" because it distinguishes between characters that are duplicated and those that are not.
+
