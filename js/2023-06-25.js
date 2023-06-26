@@ -8,3 +8,5 @@ const dominator = arr => {
    }
    return -1;
 }
+
+[1,2,3,3,3,5]
