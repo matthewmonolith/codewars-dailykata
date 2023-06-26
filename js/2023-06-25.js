@@ -1,12 +1,10 @@
-function dominator(arr) {
-  arr.sort();
-  for (var i = 0, v = 0, c = 0; i < arr.length; i++) {
-     if (v == arr[i]) c++;
-     else { 
-       v = arr[i];
-       c = 1;
-     }
-     if (c > arr.length / 2) return v;
-  }
-  return -1;
+const dominator = arr => {
+   let count  = {};
+   arr.forEach(el => {
+     count[el] ? count[el]++ : count[el] = 1;
+   })
+   for (let k in count) {
+     if (count[k] > arr.length/2) return +k
+   }
+   return -1;
 }
