@@ -5,4 +5,4 @@ function noBoringZeros(n) {
 
 function noBoringZeros(n) {
   return +`${n}`.replace(/0+$/, "");
-}
+} //0+ means any continuation of 0, for example 90000, $ means at the end
