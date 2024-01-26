@@ -1,0 +1,1 @@
+const twoDecimalPlaces= (n) => {return +n.toFixed(2)}
